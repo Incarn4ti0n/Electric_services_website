@@ -123,7 +123,7 @@ button:hover {
 }
 
 /* O MNIE */
-#omnie {
+.omnie {
   width: 100%;
   padding: 70px 0;
 }
@@ -156,7 +156,7 @@ button:hover {
 .title-text p {
   font-size: 20px;
 }
-.feature-box {
+.features-box {
   width: 80%;
   margin: auto;
   display: flex;
@@ -173,21 +173,22 @@ button:hover {
 }
 .features-img img {
   width: 70%;
+  
   border-radius: 10px;
 }
 
-.feature h1{
+.features h1{
    text-align: left;
    margin-bottom: 10px;
    font-weight: 100;
    color: #009688;
 }
-.feature-desc{
+.features-desc{
   display:flex;
   align-items: center;
   margin-bottom: 40px ;
 }
-.feature-icon .fa{
+.features-icon .fa{
  width: 50px;
  height: 50px;
  font-size: 30px;
@@ -196,7 +197,7 @@ button:hover {
  color: #009688;
  border: 1px solid #009688;
 }
-.feature-text p{
+.features-text p{
  padding: 0 20px;
  text-align: initial;
 }

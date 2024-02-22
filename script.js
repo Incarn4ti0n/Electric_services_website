@@ -1,6 +1,13 @@
+"use strict";
+
 const menuBtn = document.querySelector(".menuBtn");
 const sideNav = document.querySelector(".sideNav");
 const menu = document.querySelector(".menu");
+const btnKontaktScroll = document.querySelector(".kontakt");
+const sectionOMnie = document.querySelector(".omnie");
+console.log(sectionOMnie);
+
+//////////////////////////////////////////////////////
 
 sideNav.style.right = "-250px";
 
@@ -14,11 +21,10 @@ menuBtn.onclick = function () {
   }
 };
 
-const btnKontaktScroll = document.querySelector('.kontakt');
-const sectionOMnie = document.querySelector('#omnie');
+// BTN KONTAKT SCROLL
+btnKontaktScroll.addEventListener("click", function (e) {
+  e.preventDefault();
+  const sectionOMniecoords = sectionOMnie.getBoundingClientRect();
 
-btnKontaktScroll.addEventListener('click', function() {
-
-    sectionOMnie.scrollIntoView({ behavior: 'smooth' });
-
-})
+  sectionOMnie.scrollIntoView({ behavior: "smooth" });
+});
